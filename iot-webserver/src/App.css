@@ -1,0 +1,21 @@
+/* Wrapper để căn giữa container chứa hai phần tử */
+.app-wrapper {
+  display: flex;
+  justify-content: center; /* Căn giữa container theo chiều ngang */
+  align-items: center; /* Căn giữa container theo chiều dọc */
+  height: 400px; /* Chiều cao toàn màn hình */
+  box-sizing: border-box;
+}
+
+/* Container cho cả hai phần tử, đảm bảo phần tử thứ hai nằm giữa màn hình */
+.app-container {
+  display: flex;
+  gap: 20px; /* Khoảng cách giữa các phần tử */
+}
+
+/* Đảm bảo các phần tử trong .app-container có cùng kích thước */
+.app-container > * {
+  width: 300px; /* Đặt chiều rộng cố định cho mỗi phần tử */
+  max-width: 100%; /* Giới hạn chiều rộng tối đa cho mỗi phần tử */
+  text-align: center; /* Căn giữa nội dung bên trong từng phần tử */
+}

@@ -1,0 +1,115 @@
+/* Container để chia form và hình ảnh */
+.register-form-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Đảm bảo các phần tử có chiều cao bằng nhau */
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* Phần hình ảnh */
+  .register-form-image {
+    flex: 1; /* Hình ảnh chiếm 50% chiều rộng */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .register-form-image img {
+    width: 100%;
+    max-width: 500px; /* Giới hạn chiều rộng hình ảnh */
+    height: 100%; /* Đảm bảo chiều cao của hình ảnh bằng form */
+    object-fit: cover; /* Đảm bảo hình ảnh luôn đầy khối chứa */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Phần form đăng ký */
+  .register-form-container {
+    flex: 1; /* Form chiếm 50% chiều rộng */
+    width: 100%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Style cho các trường input */
+  .register-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .register-form .form-group label {
+    font-size: 1.1rem;
+    color: #555;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .register-form .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  
+  .register-form .form-actions {
+    margin-top: 20px;
+  }
+  
+  /* Style cho các nút */
+  .register-btn, .login-btn {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #4CAF50; /* Màu chữ khi không hover (xanh lá) */
+    background-color: transparent; /* Không có nền khi bình thường */
+    border: 2px solid #4CAF50; /* Viền màu xanh lá cho nút đăng ký */
+    border-radius: 50px; /* Bo góc nút thành hình oval */
+    cursor: pointer;
+    transition: all 0.5s ease; /* Hiệu ứng mượt mà khi hover */
+    width: 100%;
+    max-width: 200px; /* Giới hạn chiều rộng */
+    margin: 10px 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Bóng mờ */
+  }
+  
+  /* Nút Đăng Ký */
+  .register-btn {
+    color: #4CAF50; /* Màu chữ khi bình thường */
+    border-color: #4CAF50; /* Màu viền khi bình thường */
+  }
+  
+  .register-btn:hover {
+    background-color: #4CAF50; /* Tô nền màu xanh lá khi hover */
+    color: white; /* Chữ chuyển sang trắng khi hover */
+    transform: translateY(-3px); /* Hiệu ứng nâng nút lên khi hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Tăng bóng khi hover */
+  }
+  
+  /* Nút Đăng Nhập (Màu Nâu) */
+  .login-btn {
+    color: #8B4513; /* Màu chữ khi không hover (nâu) */
+    border-color: #8B4513; /* Màu viền khi bình thường (nâu) */
+  }
+  
+  .login-btn:hover {
+    background-color: #8B4513; /* Tô nền màu nâu khi hover */
+    color: white; /* Chữ chuyển sang trắng khi hover */
+    transform: translateY(-3px); /* Hiệu ứng nâng nút lên khi hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Tăng bóng khi hover */
+  }
+  

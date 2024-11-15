@@ -1,0 +1,99 @@
+.gauge-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    margin-top: 20px;
+    background-color: #ffffff;
+    transition: box-shadow 0.3s; /* Thêm hiệu ứng chuyển đổi cho bóng mờ */
+  }
+  
+  /* Hiệu ứng viền mờ xanh khi nhiệt độ thấp (0-20°C) */
+  .gauge-container.low {
+    border: 2px solid #55bf3b;
+    box-shadow: 0 0 20px 5px rgba(85, 191, 59, 0.5); /* Màu xanh nhạt */
+  }
+  
+  /* Hiệu ứng viền mờ vàng khi nhiệt độ trung bình (21-35°C) */
+  .gauge-container.medium {
+    border: 2px solid #dddf0d;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Màu vàng nhạt */
+  }
+  
+  /* Hiệu ứng viền mờ đỏ khi nhiệt độ cao (36-50°C) */
+  .gauge-container.high {
+    border: 2px solid #df5353;
+    box-shadow: 0 0 20px 5px rgba(223, 83, 83, 0.5); /* Màu đỏ nhạt */
+  }
+  
+  .gauge-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .gauge {
+    position: relative;
+    width: 200px;
+    height: 100px;
+  }
+  
+  .gauge-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #55bf3b, #dddf0d, #df5353);
+    border-radius: 100px 100px 0 0;
+    overflow: hidden;
+  }
+  
+  .gauge-tick {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    transform-origin: center bottom;
+  }
+  
+  .tick-label {
+    font-size: 12px;
+    color: #333;
+    transform-origin: center bottom;
+    margin-top: -20px;
+  }
+  
+  .needle {
+    position: absolute;
+    width: 2px;
+    height: 90px;
+    background-color: gray;
+    bottom: 0;
+    left: 50%;
+    transform-origin: bottom;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .gauge-center {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: gray;
+    border-radius: 50%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .temperature-display {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+  }
+  

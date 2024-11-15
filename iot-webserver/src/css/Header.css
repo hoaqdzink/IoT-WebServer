@@ -1,0 +1,74 @@
+/* Toàn bộ header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../img/image.png'); /* Đảm bảo đường dẫn chính xác */
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 0; /* Loại bỏ padding trong header */
+}
+
+/* Nền mờ cho phần content kéo dài toàn màn hình */
+header .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* Đặt chiều rộng 100% để phủ toàn bộ chiều ngang */
+    max-width: 100%; /* Đảm bảo không bị giới hạn chiều rộng */
+    padding: 10px 50px; /* Padding để có khoảng cách bên trong */
+    background-color: rgba(255, 255, 255, 0.3); /* Nền trắng với độ trong suốt */
+    backdrop-filter: blur(10px); /* Hiệu ứng mờ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bóng mờ nhẹ */
+}
+
+/* Logo */
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Navigation bar */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Các liên kết trong thanh điều hướng */
+nav ul li a {
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Hiệu ứng hover cho các liên kết */
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #f7f7f7;
+}
+
+/* Responsive header - điều chỉnh cho màn hình nhỏ */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

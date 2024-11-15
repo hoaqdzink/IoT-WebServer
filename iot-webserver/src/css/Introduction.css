@@ -1,0 +1,66 @@
+/* Wrapper để chứa cả phần văn bản và hình ảnh */
+.introduction-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f7fafc;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+}
+
+/* Phần văn bản */
+.introduction-content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Tiêu đề */
+.introduction-title {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Đoạn văn bản */
+.introduction-text {
+    font-size: 1rem;
+    color: #34495e;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Phần hình ảnh */
+.introduction-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduction-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 768px) {
+    .introduction-wrapper {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .introduction-content, .introduction-image {
+        padding: 10px;
+    }
+
+    .introduction-image img {
+        max-width: 100%;
+    }
+}

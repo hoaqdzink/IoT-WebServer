@@ -1,0 +1,54 @@
+/* LightControl.css */
+
+.light-control {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 300px;
+    background: #f7f7f7;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.light-control h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.light-bulb {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.light-bulb.on {
+    background-color: yellow;
+    box-shadow: 0 0 20px yellow;
+}
+
+.light-bulb.off {
+    background-color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-button.on {
+    background-color: #ff5722; /* Màu đỏ khi bật */
+}
+
+.toggle-button.off {
+    background-color: #4CAF50; /* Màu xanh lá khi tắt */
+}
