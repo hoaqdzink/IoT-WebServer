@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: IoT-webserver-BE
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    show-sql: true
+  datasource:
+    url: jdbc:mysql://gateway01.ap-southeast-1.prod.aws.tidbcloud.com:4000/IoT_Webserver
+    username: 3pPp29WZ1477fWf.root
+    password: RFQAE1DA8jp1KvPB
+    driver-class-name: com.mysql.cj.jdbc.Driver
+server:
+  port: 3838
