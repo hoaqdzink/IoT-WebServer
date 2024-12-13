@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/Header.css";
+import { Link } from "react-router-dom"; // Import Link từ react-router-dom
 
 export default function Header() {
     return (
@@ -8,10 +8,10 @@ export default function Header() {
                 <div className="logo">IrrigSmart</div>
                 <nav>
                     <ul>
-                        <li><a href="">Trang Chủ</a></li>
-                        <li><a href="">Điều Khiển Đèn</a></li>
-                        <li><a href="">Cài Đặt</a></li>
-                        <li><a href="">Liên Hệ</a></li>
+                        <li><Link to="/">Trang Chủ</Link></li>
+                        <li><Link to="/control">Điều Khiển</Link></li>
+                        <li><Link to="/sensor">Cảm biến</Link></li>
+                        <li><Link to="/data">Dữ liệu</Link></li>
                     </ul>
                 </nav>
             </div>
