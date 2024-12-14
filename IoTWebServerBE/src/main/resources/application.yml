@@ -13,5 +13,23 @@ spring:
     username: 3pPp29WZ1477fWf.root
     password: RFQAE1DA8jp1KvPB
     driver-class-name: com.mysql.cj.jdbc.Driver
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: vinhnh.2312@gmail.com
+    password: qtiwlciuzcpoddbf
+    properties:
+      mail:
+        smtp:
+          auth: true
+        starttls:
+          enable: true
 server:
   port: 8999
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui-custom.html
+

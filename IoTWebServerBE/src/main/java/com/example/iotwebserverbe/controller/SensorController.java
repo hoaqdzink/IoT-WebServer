@@ -39,6 +39,11 @@ public class SensorController {
                 .orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }
 
+    @GetMapping("/name/{name}")
+    public List<Sensor> getSensors(@PathVariable String name) {
+        return sensorService.getSensorsByName(name);
+    }
+
     // Delete Sensor by ID
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteSensor(@PathVariable int id) {

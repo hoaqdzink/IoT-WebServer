@@ -1,0 +1,87 @@
+.temperature-control {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.temperature-control h2 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.temperature-control p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.temperature-control .status {
+    font-size: 1.2rem;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.temperature-control .temperature {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.temperature-control .chart-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.temperature-control h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.temperature-control .status p {
+    font-style: italic;
+    color: #888;
+}
+
+.temperature-control .send-status {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #2ecc71;
+}
+
+.temperature-control .send-status .sending {
+    color: #e67e22;
+}
+
+.temperature-control .send-status .ready {
+    color: #2ecc71;
+}
+
+@media (max-width: 600px) {
+    .temperature-control {
+        padding: 15px;
+    }
+
+    .temperature-control h2 {
+        font-size: 1.8rem;
+    }
+
+    .temperature-control p {
+        font-size: 1rem;
+    }
+
+    .temperature-control h3 {
+        font-size: 1.3rem;
+    }
+}

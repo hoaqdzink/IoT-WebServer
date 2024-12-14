@@ -39,6 +39,11 @@ public class ControlController {
                 .orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }
 
+    @GetMapping("/name/{type}")
+    public List<Control> getControls(@PathVariable String type) {
+        return controlService.getControlsByType(type);
+    }
+
     // Update Control by ID
     @PutMapping("/{id}")
     public ResponseEntity<Control> updateControl(@PathVariable int id, @RequestBody Control updatedControl) {

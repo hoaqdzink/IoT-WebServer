@@ -1,0 +1,14 @@
+.soil-humidity-container1 {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.soil-humidity-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+canvas {
+    max-height: 400px;
+}

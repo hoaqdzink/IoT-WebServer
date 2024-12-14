@@ -35,6 +35,10 @@ public class ControlService {
         return controlRepository.findById(id);
     }
 
+    public List<Control> getControlsByType(String type) {
+        return controlRepository.findAllByTypeOrderByTimeDesc(type);
+    }
+
     // Update Control
     public Control updateControl(int id, Control updatedControl) {
         return controlRepository.findById(id).map(control -> {
